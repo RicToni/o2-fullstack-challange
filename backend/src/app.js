@@ -9,6 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/produtos', produtoRoutes);
+app.use('/api/movimentacoes', movimentacaoRoutes); 
+
 
 // Sincronizar os modelos com o banco
 sequelize.sync().then(() => {
