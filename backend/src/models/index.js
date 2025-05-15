@@ -9,3 +9,8 @@ Produto.hasMany(Movimentacao, {
 Movimentacao.belongsTo(Produto, {
   foreignKey: 'produtoId',
 });
+
+module.exports = {
+  Produto,
+  Movimentacao
+};
