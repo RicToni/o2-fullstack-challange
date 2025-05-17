@@ -6,10 +6,10 @@ const ListarProdutos = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/produtos') // ajuste a URL conforme seu backend
+    fetch('http://localhost:3000/api/produtos') 
       .then(res => res.json())
       .then(data => {
-        console.log('Dados recebidos:', data); // <-- Aqui pode deixar o log
+        console.log('Dados recebidos:', data); 
         setProdutos(data);
         setLoading(false);
       })
